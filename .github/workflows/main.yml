@@ -36,4 +36,4 @@ jobs:
       run: |
         docker push nagagogulan/node1:${{ github.sha }}
         docker tag nagagogulan/node1:${{ github.sha }} nagagogulan/node1:latest
-        docker push nagagogulan/node1:latest
+       
