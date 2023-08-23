@@ -33,7 +33,7 @@ jobs:
 
 
     - name:  push Docker image
-      uses: docker/push-action@v2
+      uses: docker/push-action@v4
       with:
          
           push: true
