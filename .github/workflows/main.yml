@@ -34,6 +34,7 @@ jobs:
 
     - name: Push Docker image
       run: |
-        docker push nagagogulan/node1:${{ github.sha }}
-        docker tag nagagogulan/node1:${{ github.sha }} nagagogulan/node1:latest
+       docker push nagagogulan/node1:cef193a40157454929697fe39a2416551c554a3c
+       docker tag nagagogulan/node1:cef193a40157454929697fe39a2416551c554a3c nagagogulan/node1:latest
+       
        
