@@ -22,8 +22,8 @@ jobs:
       uses: docker/login-action@v2
       with:
          
-          username: nagagogulan
-          password: dckr_pat_X0rWbGoWE_nPgoQA9wDq7IN1A8c
+          username: ajuuu
+          password: dckr_pat_C575XUjJsqZNnsOrqoj67VpqEPE
 
   
     - name: Build and push Docker image
@@ -31,6 +31,6 @@ jobs:
       with:
        context: ./Dockerhub
        push: true
-       tags: nagagogulan/node1:tagname
+       tags: ajuuu/firstcicd:tagname
        
        
