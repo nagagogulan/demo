@@ -32,5 +32,17 @@ jobs:
        context: ./Dockerhub
        push: true
        tags: nagagogulan/node1:tagname
+
+
+  deploy:
+    needs: build
+    runs-on: [aws-ec2]
+    steps:
+      - name: Pull image from docker hub
+        run: docker pull nagagogulan/node1:tagname
+      - name: Delete old container
+        run: docker rm -f nodejs-app-container
+      - name: Run docker container
+        run: docker run -d -p 5000:5000 --name nodejs-app-container integrationninjas/nodejs-app
        
        
